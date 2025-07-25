@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="پب جی پرو ہب - پاکستانی پلیئرز کے لئے پب جی: بیٹل گراؤنڈز اور پب جی موبائل کی مکمل گائیڈ، اردو اور انگریزی میں۔">
+    <meta name="keywords" content="PUBG, PUBG Mobile, Missions, Redeem Codes, Guides, Urdu, Pakistani, Gaming">
+    <title>PUBG Pro Hub - پاکستانی پب جی گائیڈ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron|Noto+Nastaliq+Urdu|Roboto">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">PUBG Pro Hub</div>
+            <nav>
+                <a href="#home" data-lang="home">ہوم</a>
+                <a href="#news" data-lang="news">تازہ خبریں</a>
+                <a href="#missions" data-lang="missions">مشنز</a>
+                <a href="#guides" data-lang="guides">گائیڈز</a>
+                <a href="#redeem" data-lang="redeem">ریڈیم کوڈز</a>
+                <a href="#dashboard" data-lang="dashboard">ڈیش بورڈ</a>
+                <a href="#contact" data-lang="contact">رابطہ</a>
+            </nav>
+            <div class="lang-toggle">
+                <button onclick="toggleLanguage('en')">English</button>
+                <button onclick="toggleLanguage('ur')">اردو</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1 data-lang="home-title">پب جی پرو ہب میں خوش آمدید</h1>
+            <p data-lang="home-desc">پاکستانی پب جی پلیئرز کے لئے مکمل گائیڈ! اردو اور انگریزی میں تازہ اپ ڈیٹس، مشنز، ٹپس، اور ریڈیم کوڈز حاصل کریں۔</p>
+            <button onclick="scrollToSection('missions')" data-lang="explore">ابھی دریافت کریں</button>
+        </div>
+    </section>
+
+    <section id="news">
+        <h2 data-lang="news-title">تازہ پب جی اپ ڈیٹس</h2>
+        <div class="news-list">
+            <div class="news-card">
+                <h3 data-lang="news-aespa">پب جی x ایپا تعاون</h3>
+                <p data-lang="news-aespa-desc">جولائی 2025 کی اپ ڈیٹ میں ایپا تھیم والی سکنز اور نئی لابی میوزک شامل۔</p>
+            </div>
+            <div class="news-card">
+                <h3 data-lang="news-transformers">ٹرانسفارمرز موڈ</h3>
+                <p data-lang="news-transformers-desc">پب جی موبائل میں آپٹیمس پرائم اور میگاٹرون کے ساتھ نیا ہاٹ ڈراپ موڈ۔</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="missions">
+        <h2 data-lang="missions-title">تازہ ترین پب جی مشنز</h2>
+        <div class="mission-filter">
+            <select id="platform-filter">
+                <option value="all" data-lang="all-platforms">تمام پلیٹ فارمز</option>
+                <option value="pc">PC/Console</option>
+                <option value="mobile">Mobile</option>
+            </select>
+            <input type="text" id="search-missions" placeholder="مشنز تلاش کریں..." data-lang-placeholder="search-missions">
+        </div>
+        <div class="mission-list">
+            <div class="mission-card" data-platform="pc">
+                <h3 data-lang="survivor-pass">سروائیور پاس: کس دی سن</h3>
+                <p data-lang="survivor-pass-desc">روزانہ، ہفتہ وار، اور سیزن مشنز مکمل کریں تاکہ سمر تھیم والی سکنز حاصل ہوں۔ مثال: 500 ڈیمیج (روزانہ)، 1 میچ جیت (ہفتہ وار)۔</p>
+                <span class="platform">PC/Console</span>
+            </div>
+            <div class="mission-card" data-platform="pc">
+                <h3 data-lang="aespa-mission">پب جی x ایپا تعاون</h3>
+                <p data-lang="aespa-mission-desc">ایرانجل پر 5 میچز کھیلیں یا C4 سے 2 کِلز حاصل کریں تاکہ ایپا سکنز بنائیں۔</p>
+                <span class="platform">PC/Console</span>
+            </div>
+            <div class="mission-card" data-platform="mobile">
+                <h3 data-lang="transformers-mission">ٹرانسفارمرز تعاون</h3>
+                <p data-lang="transformers-mission-desc">ہاٹ ڈراپس میں آپٹیمس پرائم یا میگاٹرون کے طور پر 1,000 ڈیمیج دیں۔ انعام: انرجن کیوبز۔</p>
+                <span class="platform">Mobile</span>
+            </div>
+            <div class="mission-card" data-platform="mobile">
+                <h3 data-lang="summer-showdown">سمر شو ڈاؤن</h3>
+                <p data-lang="summer-showdown-desc">ورلڈ آف ونڈر میں انک بلاسٹر سے 10 دشمنوں کو ہٹ کریں یا جائنٹ آئس ڈریگن کو ہرائیں۔</p>
+                <span class="platform">Mobile</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="guides">
+        <h2 data-lang="guides-title">گیم پلے گائیڈز اور ٹپس</h2>
+        <div class="guide-list">
+            <div class="guide-card">
+                <h3 data-lang="weapon-guide">بہترین ہتھیار</h3>
+                <p data-lang="weapon-guide-desc">M416 کو ورسٹائلٹی کے لئے یا AWM کو سناپنگ کے لئے استعمال کریں۔ ہتھیاروں کے اسٹیٹس اور ریکائل ٹپس چیک کریں۔</p>
+            </div>
+            <div class="guide-card">
+                <h3 data-lang="login-fix">لاگ ان مسائل حل کریں</h3>
+                <p data-lang="login-fix-desc">انٹرنیٹ چیک کریں، کریڈینشلز کی تصدیق کریں، یا GearUP بوسٹر سے لیٹنسی کم کریں۔</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="redeem">
+        <h2 data-lang="redeem-title">ریڈیم کوڈز</h2>
+        <p data-lang="redeem-desc">فروری 2025 کے لئے کوئی ایکٹو کوڈز نہیں، لیکن وینیشین کریٹ کے لئے ایکسپائرڈ کوڈز آزمائیں۔</p>
+        <form id="redeem-form">
+            <input type="text" id="redeem-code" placeholder="ریڈیم کوڈ درج کریں" data-lang-placeholder="redeem-code">
+            <button type="submit" data-lang="redeem-btn">ریڈیم کریں</button>
+        </form>
+    </section>
+
+    <section id="dashboard">
+        <h2 data-lang="dashboard-title">صارف ڈیش بورڈ</h2>
+        <p data-lang="dashboard-desc">اپنے مشن کی پیشرفت ٹریک کریں، اسٹیٹس دیکھیں، اور آرڈرز کا نظم کریں۔ لاگ ان ضروری ہے۔</p>
+        <button onclick="alert('لاگ ان فیچر جلد آ رہا ہے!')" data-lang="login">لاگ ان</button>
+    </section>
+
+    <section id="contact">
+        <h2 data-lang="contact-title">ہم سے رابطہ کریں</h2>
+        <p data-lang="contact-desc">واٹس ایپ، ای میل، یا سپورٹ ٹکٹ کے ذریعے پب جی کی مدد حاصل کریں۔ پاکستانی کمیونٹی کے لئے واٹس ایپ گروپ جوائن کریں!</p>
+        <div class="contact-options">
+            <a href="https://wa.me/+923481143077" target="_blank" data-lang="whatsapp">واٹس ایپ: +923481143077</a>
+            <a href="mailto:support@pubgprohub.com" data-lang="email">ای میل: support@pubgprohub.com</a>
+            <a href="https://chat.whatsapp.com/PUBGPakCommunity" target="_blank" data-lang="community">واٹس ایپ گروپ جوائن کریں</a>
+            <button onclick="alert('ٹکٹ فیچر جلد آ رہا ہے!')" data-lang="ticket">ٹکٹ جمع کروائیں</button>
+        </div>
+    </section>
+
+    <footer>
+        <p data-lang="footer">© 2025 پب جی پرو ہب۔ جملہ حقوق محفوظ ہیں۔ xAI کے ذریعے تقویت یافتہ۔</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="urdu.js"></script>
+</body>
+</html>
